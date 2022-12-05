@@ -1,0 +1,84 @@
+$primary: #29073d;
+$primaryLt: #2e2e4d;
+
+$mobileResolution: 767px;
+$ipadProResolution: 1024px;
+
+@font-face {
+  font-family: "LibreBaskerville";
+  src: url("https://ik.imagekit.io/skp/fonts/libre-baskerville.woff2")
+    format("woff2");
+  font-display: swap;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #5b0480 0%, #29073d 100%);
+  border: unset;
+  padding: 0.5rem 1.6rem 0.5rem;
+  border-radius: 0px;
+  color: #fff !important;
+}
+
+.btn-white {
+  background: #fff;
+  border: 1px solid #5B048026;
+  padding: 0.5rem 1.6rem 0.5rem;
+  border-radius: 0px;
+  color: $primary !important;
+}
+
+.btn-b-white {
+  background: transparent;
+  border: 1px solid #fff;
+  padding: 0.5rem 1.6rem 0.75rem;
+  border-radius: 0px;
+  color: #fff !important;
+  color: #fff !important;
+}
+
+.btn-purple{
+  background: #9A82A2;
+  padding: 0.4rem 1.6rem 0.4rem;
+  color: #fff;
+  border: 0;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.btn-secondary {
+  background: #fff;
+  border: unset;
+  padding: 0.5rem 1.6rem;
+  border-radius: 0px;
+  color: $primary !important;
+  border: 1px solid #5b048031;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+
+  &:hover {
+    background: linear-gradient(135deg, #5b0480 0%, #29073d 100%);
+    color: #fff !important;
+  }
+}
+
+.body {
+  font-family: "Montserrat", sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+}
+
+.f-lb {
+  font-family: "LibreBaskerville" sans-serif !important;
+}
+
+.white {
+  color: #fff !important;
+}
+
+.f24 {
+  font-size: 24px;
+}
