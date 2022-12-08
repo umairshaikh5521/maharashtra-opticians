@@ -3,28 +3,102 @@ $primaryLt: #2e2e4d;
 
 $mobileResolution: 767px;
 $ipadProResolution: 1024px;
-
 @font-face {
-  font-family: "LibreBaskerville";
-  src: url("https://ik.imagekit.io/skp/fonts/libre-baskerville.woff2")
+  font-family: "Mukta";
+  src: url("/assets/fonts/Mukta-Regular.woff2")
     format("woff2");
   font-display: swap;
+  font-weight: 300;
 }
 
+@font-face {
+  font-family: "Mukta";
+  src: url("/assets/fonts/mukta-medium.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Mukta";
+  src: url("/assets/fonts/mukta-semibold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Mukta";
+  src: url("/assets/fonts/mukta-bold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/palanquindark-regular.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/PalanquinDark-Medium.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/palanquindark-semibold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/PalanquinDark-Bold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
 .btn-primary {
-  background: linear-gradient(135deg, #5b0480 0%, #29073d 100%);
-  border: unset;
+  border-radius: 100px;
+  background-color: #B54F59;
   padding: 0.5rem 1.6rem 0.5rem;
-  border-radius: 0px;
+  border: 0 ;
+  font-size: 16px;
+  font-family: "Mukta";
+  font-weight: bold;
   color: #fff !important;
+  margin-right: 15px;
+  &:hover{
+    background-color: #B54F59 ;
+  }
+  &.white{
+    border: 1px solid #fff;
+    background-color:  #E5717D;
+  }
 }
 
-.btn-white {
-  background: #fff;
-  border: 1px solid #5B048026;
+.btn-grey {
+  border-radius: 100px;
+  background-color:#909090;
   padding: 0.5rem 1.6rem 0.5rem;
-  border-radius: 0px;
-  color: $primary !important;
+  border: 0 ;
+  font-size: 16px;
+  font-family: "Mukta";
+  font-weight: 500;
+  color: #fff !important;
+  &:hover{
+    background-color: #909090 ;
+  }
 }
 
 .btn-b-white {
