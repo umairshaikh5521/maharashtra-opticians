@@ -81,11 +81,13 @@
 
 .btn-b-white {
   background: transparent;
-  border: 1px solid #fff;
-  padding: 0.5rem 1.6rem 0.75rem;
-  border-radius: 0px;
-  color: #fff !important;
-  color: #fff !important;
+  border: 1px solid #CCCCCC;
+  padding: 0.5rem 2.6rem 0.5rem;
+  border-radius: 60px;
+  color: #909090 !important;
+  font-size: 18px;
+  font-family: "Mukta";
+  font-weight: 300;
 }
 
 .btn-purple {
@@ -142,15 +144,76 @@ a {
   border-bottom-right-radius: 60px;
 }
 
+.dropdown-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 23px;
+  padding-bottom: 23px;
+}
+.dropdown-wrap .drop-down select {
+  background: transparent !important;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  font-family: "Mukta";
+}
+.dropdown-wrap .drop-down select option {
+  background-color: #000;
+  color: #fff;
+}
+.dropdown-wrap .drop-down label {
+  width: 0;
+}
+.dropdown-wrap .timing {
+  display: flex;
+  align-items: center;
+}
+.dropdown-wrap .timing .green-dot {
+  background-color: #11DB00;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.dropdown-wrap .timing .open-or-close {
+  color: #fff;
+  margin-right: 19px;
+  font-size: 14px;
+  font-family: "Mukta";
+}
+.dropdown-wrap .timing .time {
+  color: #fff;
+  font-size: 14px;
+  font-family: "Mukta";
+}
+
 .banner-section {
   margin-top: 120px;
   display: flex;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 900px) {
+  .banner-section {
+    flex-direction: column;
+  }
 }
 .banner-section .left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
+}
+@media only screen and (max-width: 1024px) {
+  .banner-section .left {
+    width: 47%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner-section .left {
+    width: 100%;
+    margin-bottom: 50px;
+  }
 }
 .banner-section .left .section-title {
   font-size: 36px;
@@ -172,21 +235,47 @@ a {
   display: flex;
   justify-content: center;
 }
+@media only screen and (max-width: 1024px) {
+  .banner-section .right {
+    width: 48%;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner-section .right {
+    width: 100%;
+  }
+}
 .banner-section .right img {
   height: 576px;
+}
+@media only screen and (max-width: 1300px) {
+  .banner-section .right img {
+    height: 480px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .banner-section .right img {
+    height: 450px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .banner-section .right img {
+    height: 500px;
+  }
 }
 
 .swip-section-wrap {
   background: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 5;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
+  padding-bottom: 1px;
 }
 .swip-section-wrap .swip-section {
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   width: 79%;
 }
 .swip-section-wrap .swip-section .brandSwiper {
@@ -237,6 +326,11 @@ a {
 .whyshop .container-new .section-wrap {
   display: flex;
   justify-content: space-between;
+}
+@media only screen and (max-width: 900px) {
+  .whyshop .container-new .section-wrap {
+    flex-direction: column;
+  }
 }
 .whyshop .container-new .section-wrap .left {
   width: 40%;
@@ -348,23 +442,28 @@ a {
   font-weight: 500;
 }
 
-.image-gallery {
+.image-gallery-wrap {
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  z-index: 2;
+  position: relative;
+  background-color: #fff;
   margin-top: 48px;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
-.image-gallery .section-title {
+.image-gallery-wrap .image-gallery .section-title {
   font-family: "Palanquin Dark";
   font-size: 36px;
   font-weight: 300;
   text-align: center;
   margin-bottom: 48px;
 }
-.image-gallery .images {
+.image-gallery-wrap .image-gallery .images {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.image-gallery .images img {
+.image-gallery-wrap .image-gallery .images img {
   flex-basis: 24%;
   margin-bottom: 44px;
 }
@@ -372,19 +471,19 @@ a {
 .our-legacy {
   background: #3B0006;
   align-items: center;
-  padding-top: 68px;
-  margin-top: -50px;
+  padding-top: 110px;
   position: relative;
   z-index: 3;
   border-bottom-left-radius: 60px;
   border-bottom-right-radius: 60px;
   max-width: 1920px;
   margin: auto;
+  margin-top: -50px;
 }
-.our-legacy .mySwiper .swiper-pagination {
+.our-legacy .legacy .swiper-pagination {
   bottom: 48px;
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet {
   width: 96px;
   height: 12px;
   background: #fff;
@@ -393,7 +492,7 @@ a {
   margin-right: 36px;
   position: relative;
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet::before {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet::before {
   content: "1982";
   width: 100%;
   height: 30px;
@@ -402,42 +501,42 @@ a {
   left: 0;
   font-size: 24px;
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet:nth-of-type(2)::before {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet:nth-of-type(2)::before {
   content: "1992";
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet:nth-of-type(3)::before {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet:nth-of-type(3)::before {
   content: "2004";
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet:nth-of-type(4) {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet:nth-of-type(4) {
   margin: 0;
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet:nth-of-type(4)::before {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet:nth-of-type(4)::before {
   content: "2016";
 }
-.our-legacy .mySwiper .swiper-pagination .swiper-pagination-bullet span {
+.our-legacy .legacy .swiper-pagination .swiper-pagination-bullet span {
   margin-bottom: 50px;
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide {
+.our-legacy .legacy .swiper-wrapper .swiper-slide {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-next {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-next {
   transform: scale(0.85);
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-next .swiper-title {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-next .swiper-title {
   display: none;
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-next p {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-next p {
   display: none;
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-prev {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-prev {
   transform: scale(0.85);
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-prev .swiper-title {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-prev .swiper-title {
   display: none;
 }
-.our-legacy .mySwiper .swiper-wrapper .swiper-slide-prev p {
+.our-legacy .legacy .swiper-wrapper .swiper-slide-prev p {
   display: none;
 }
 .our-legacy .section-title {
@@ -471,6 +570,141 @@ a {
   margin-bottom: 180px;
 }
 
+.product-wrap {
+  background: #fff;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  z-index: 2;
+  position: relative;
+}
+.product-wrap .products {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 56px;
+  position: relative;
+}
+.product-wrap .products .mySwiper {
+  height: 600px;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+.product-wrap .products .mySwiper .swiper-slide {
+  height: auto !important;
+  margin-bottom: 30px !important;
+}
+@media only screen and (max-width: 1800px) {
+  .product-wrap .products .mySwiper {
+    top: 60%;
+  }
+}
+.product-wrap .products .section-title {
+  font-size: 36px;
+  font-weight: 300;
+  font-family: "Palanquin Dark";
+  margin-bottom: 48px;
+}
+.product-wrap .products .bottom {
+  display: flex;
+  align-items: center;
+}
+.product-wrap .products .bottom .left {
+  width: auto;
+  margin-right: 50px;
+}
+.product-wrap .products .bottom .left img {
+  width: 516px;
+}
+@media only screen and (max-width: 1800px) {
+  .product-wrap .products .bottom .left img {
+    width: 700px;
+  }
+}
+.product-wrap .products .bottom .right {
+  width: 40%;
+}
+.product-wrap .products .bottom .right .product-name {
+  font-family: "Mukta";
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.product-wrap .products .bottom .right .specification {
+  color: #909090;
+  font-family: "Mukta";
+  font-size: 18px;
+  font-weight: 300;
+  margin-bottom: 13px;
+}
+.product-wrap .products .bottom .right .color-options {
+  display: flex;
+}
+.product-wrap .products .bottom .right .color-options p {
+  background-color: #EAEAEA;
+  padding: 13px 15px;
+  border-radius: 60px;
+  font-family: "Mukta";
+  font-size: 16px;
+  font-weight: 300;
+  color: #676767;
+  margin-right: 6px;
+}
+
+.location-section {
+  display: flex;
+  height: 686px;
+  margin-top: -50px;
+}
+.location-section .left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #B54F59;
+  width: 40%;
+  height: 100%;
+  padding-left: 200px;
+}
+.location-section .left .section-title {
+  font-family: "Palanquin Dark";
+  font-weight: 700;
+  font-size: 36px;
+  color: #fff;
+  margin-bottom: 28px;
+}
+.location-section .left .shop-info {
+  background-color: #fff;
+  width: 348px;
+  border-radius: 20px;
+  padding: 24px;
+}
+.location-section .left .shop-info .shop-name {
+  color: #676767;
+  font-family: "Mukta";
+  font-size: 20px;
+  font-weight: 300;
+}
+.location-section .left .shop-info p {
+  font-family: "Mukta";
+  font-size: 16px;
+  font-weight: 300;
+  color: #909090;
+}
+.location-section .left .shop-info a {
+  text-decoration: underline;
+  font-family: "Mukta";
+  font-size: 16px;
+  font-weight: 500;
+  color: #B54F59;
+}
+.location-section .right {
+  width: 60%;
+  height: 100%;
+}
+.location-section .right iframe {
+  height: 100%;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
 }
@@ -500,7 +734,7 @@ input:focus, select:focus {
 
 .navbar {
   background-color: #fff;
-  margin-top: 50px;
+  margin-top: 70px;
 }
 .navbar .container {
   width: 1920px !important;
@@ -549,6 +783,7 @@ input:focus, select:focus {
   background-color: #29073d;
   padding: 50px 0px;
   position: relative;
+  background-color: #1A1A1A;
 }
 .footer .footer-elem {
   height: 100%;
@@ -571,10 +806,11 @@ input:focus, select:focus {
     flex-direction: column;
   }
 }
+.footer .topRow .colLeft {
+  flex-basis: 20%;
+}
 .footer .topRow .colLeft .logo {
-  width: 280px;
   height: 48px;
-  margin-left: -13px;
 }
 @media only screen and (max-width: 767px) {
   .footer .topRow .colLeft .logo {
@@ -582,29 +818,40 @@ input:focus, select:focus {
     margin-left: unset;
   }
 }
-.footer .topRow .colLeft .contactDetails {
-  display: flex;
-  margin-top: 18px;
-}
-@media only screen and (max-width: 767px) {
-  .footer .topRow .colLeft .contactDetails {
-    flex-direction: column;
-  }
-}
-@media only screen and (max-width: 767px) {
-  .footer .topRow .colLeft .contactDetails .blockSingle {
-    margin-bottom: 10px;
-  }
-}
-.footer .topRow .colLeft .contactDetails .blockSingle:first-of-type {
-  margin-right: 0.8rem;
-}
-.footer .topRow .colLeft .contactDetails .blockSingle img {
-  width: 24px;
-  height: 24px;
-}
-.footer .topRow .colLeft .contactDetails .blockSingle span {
+.footer .topRow .colLeft p {
   color: #fff;
+  font-size: 16px;
+  font-family: "Mukta";
+  font-weight: 300;
+  margin-top: 15px;
+  margin-bottom: 25px;
+}
+.footer .topRow .colLeft .get-quote {
+  background-color: #fff;
+  color: #676767;
+  padding: 0.75rem 1.6rem 0.75rem;
+  border-radius: 60px;
+  font-size: 18px;
+  font-family: "Mukta";
+  font-weight: 300;
+}
+.footer .topRow .colRight {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.footer .topRow .colRight .address {
+  color: #fff;
+  font-size: 20px;
+  font-family: "Mukta";
+  font-weight: 500;
+  flex-basis: 30%;
+}
+.footer .topRow .colRight .address .text {
+  font-size: 16px;
+  font-family: "Mukta";
+  font-weight: 300;
+  margin-top: 15px;
 }
 @media only screen and (max-width: 1080px) {
   .footer .topRow .colRight {
