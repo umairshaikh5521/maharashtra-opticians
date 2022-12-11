@@ -36,7 +36,7 @@ input, select{
 
 .navbar {
   background-color: #fff;
-  margin-top: 70px;
+  top: 70px;
   .container {
     width: 1920px !important;
     max-width: 100% !important;
@@ -48,7 +48,7 @@ input, select{
   }
   .navbar-brand img {
     @media only screen and (max-width: $mobileResolution) {
-      width: 234px;
+      width: 120px;
     }
   }
 
@@ -85,6 +85,9 @@ input, select{
   }
 }
 
+.navbar-top-minus{
+  top: 0px;
+}
 //footer
 .footer {
   background-color: $primary;
@@ -104,17 +107,17 @@ input, select{
   .topRow {
     display: flex;
     justify-content: space-between;
-
+    gap: 3rem;
     @media only screen and (max-width: 1080px) {
       flex-direction: column;
     }
 
     .colLeft {
-      flex-basis: 20%;
+      flex-basis: 50%;
       .logo {
         height: 48px;
         @media only screen and (max-width: $mobileResolution) {
-          width: 250px;
+          width: 120px;
           margin-left: unset;
         }
       }
@@ -149,12 +152,10 @@ input, select{
         font-size: 20px;
         font-family: "Mukta";
         font-weight: 500;
-        // max-width: 250px;
-        ;
         flex-basis: 30%;
-        // &:nth-of-type(1){
-        //   flex-basis: 35%;
-        // }
+        @media only screen and (max-width: $mobileResolution){
+          flex-basis: 46%;
+        }
         .text{
           font-size: 16px;
           font-family: "Mukta";

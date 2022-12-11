@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Sai Krishna Project</title>
+  <title>Maharashtra Optician</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
@@ -34,7 +34,7 @@
         </div>
       </div>
     </div>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-lg navbr-minus-margin fixed-top">
       <div class="container">
         <a class="navbar-brand" href="/">
           <img src="/assets/images/logo.svg" alt="logo" />
@@ -326,13 +326,16 @@
   </div>
 
   <div class="location-section">
-    <div class="left">
-      <div class="section-title">Store Locator</div>
-      <div class="shop-info">
-        <div class="shop-name">Name of the Shop</div>
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
-          dolore magna</p>
-        <a href="#">GET</a>
+    <div class="left-wrap">
+      <div class="left">
+        <div class="section-title">Store Locator</div>
+        <div class="shop-info">
+          <div class="shop-name">Name of the Shop</div>
+          <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore
+            et
+            dolore magna</p>
+          <a href="#">GET</a>
+        </div>
       </div>
     </div>
     <div class="right">
@@ -420,7 +423,36 @@
       integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
       crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(window).on('scroll', function () {
+          console.log($(window).scrollTop());
+          if ($(window).scrollTop() > 50) {
+            $(".navbar").addClass("navbar-top-minus");
+            console.log("above 200")
+          } else {
+            $(".navbar").removeClass("navbar-top-minus");
+          }
+          // console.log(scrollTop)
+        });
+      });
+      // window.onscroll = function () { myFunction() };
+
+      // function myFunction() {
+      //   if (document.documentElement.scrollTop > 70) {
+      //     document.getElementsByClassName("navbar").className = "navbar-top-minus";
+      //   } else {
+      //     document.getElementsByClassName("navbar").className = "";
+      //   }
+      // }
+
+      // console.log(scroll)
+
+    </script>
 
     <!-- Initialize Swiper -->
     <script>
@@ -432,7 +464,25 @@
           nextEl: ".button-next",
           prevEl: ".button-prev",
         },
-      });
+        breakpoints: {
+          100: {
+            slidesPerView: 1.2,
+          },
+          640: {
+            slidesPerView: 2,
+          },
+          768: {
+            slidesPerView: 3,
+          },
+          1024: {
+            slidesPerView: 4,
+          },
+          1100: {
+            slidesPerView: 6,
+          },
+        },
+      }
+      );
 
       var swiper = new Swiper(".legacy", {
         slidesPerView: 2,
@@ -444,9 +494,24 @@
           el: ".swiper-pagination",
           clickable: true,
         },
+        breakpoints: {
+          100: {
+            slidesPerView: 1.2,
+          },
+          640: {
+            slidesPerView: 1.8,
+          },
+          768: {
+            slidesPerView: 1.8,
+          },
+          1024: {
+            slidesPerView: 2.1,
+          },
+        },
       });
 
       var swiper = new Swiper(".mySwiper", {
+        autoplay: true,
         loop: true,
         spaceBetween: 1,
         direction: "vertical",
@@ -455,6 +520,11 @@
         autoplay: true,
         freeMode: true,
         watchSlidesProgress: true,
+        breakpoints: {
+          600: {
+            slidesPerView: 4,
+          },
+        },
       });
       var swiper2 = new Swiper(".mySwiper2", {
         effect: "fade",
