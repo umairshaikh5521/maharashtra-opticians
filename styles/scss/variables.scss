@@ -77,13 +77,21 @@ $ipadProResolution: 1024px;
   font-family: "Mukta";
   font-weight: bold;
   color: #fff !important;
+  transition: 0.3s all;
   margin-right: 15px;
   &:hover{
-    background-color: #B54F59 ;
+    color: #B54F59 !important;
+    background: #fff;
   }
   &.white{
     border: 1px solid #fff;
     background-color:  #E5717D;
+    &:hover{
+      color:  #E5717D;
+      background: #fff;
+    border: 1px solid#E5717D;
+
+    }
   }
 }
 
@@ -96,8 +104,10 @@ $ipadProResolution: 1024px;
   font-family: "Mukta";
   font-weight: 500;
   color: #fff !important;
+  transition: 0.3s all;
   &:hover{
-    background-color: #909090 ;
+    color: #909090 !important ;
+    background-color:#fff ;
   }
 }
 

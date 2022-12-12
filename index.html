@@ -77,8 +77,8 @@
           <p>Maharashtra Opticians provides personalised products with a wide range of options available. We specialise
             in contact lens, spectacles and goggles.</p>
           <div class="button-wrap">
-            <a href="/contact-us.html" class="btn btn-primary">About</a>
-            <a href="/contact-us.html" class="btn btn-grey">Get</a>
+            <a href="#" class="btn btn-primary">About</a>
+            <a href="#" class="btn btn-grey">Get</a>
           </div>
         </div>
         <div class="right">
@@ -88,7 +88,7 @@
     </div>
   </div>
   <div class="swip-section-wrap">
-    <div class="contaner-new">
+    <div class="container-new">
       <div class="swip-section">
         <div class="swiper brandSwiper">
           <div class="swiper-wrapper">
@@ -281,6 +281,7 @@
         </div>
         <div class="right">
           <div class="services">
+            <div class="pink-circle"></div>
             <div class="circle"></div>
             <div class="service-name">Service <br> Name</div>
             <div class="arrow">
@@ -288,6 +289,7 @@
             </div>
           </div>
           <div class="services">
+            <div class="pink-circle"></div>
             <div class="circle"></div>
             <div class="service-name">Service <br> Name</div>
             <div class="arrow">
@@ -295,6 +297,7 @@
             </div>
           </div>
           <div class="services">
+            <div class="pink-circle"></div>
             <div class="circle"></div>
             <div class="service-name">Service <br> Name</div>
             <div class="arrow">
@@ -364,8 +367,7 @@
 
           <a class="get-quote" href="#">Get Quote</a>
         </div>
-
-        <div class="colRight">
+        <div class="midCol">
           <div class="address">
             <div class="heading">
               <img src="/assets/images/compus.png" alt="">
@@ -378,24 +380,18 @@
           </div>
           <div class="address">
             <div class="heading">
-              BUSINESS
-              <img src="/assets/images/open.png" alt="">
+              <div class="open">
+                BUSINESS
+                <div class="open-sign">
+                  <div class="dot"></div>
+                  OPEN
+                </div>
+              </div>
             </div>
             <div class="text">
               <P>Monday - Saturday
               </P>
               <P>10:00 am - 8:30 pm</P>
-            </div>
-          </div>
-          <div class="address">
-            <div class="heading">
-              KNOWMORE
-            </div>
-            <div class="text">
-              <P>Our ServicesOur Services</P>
-              <P>Image Gallery</P>
-              <p>Privacy Policy</p>
-              <p>T&C</p>
             </div>
           </div>
           <div class="address">
@@ -413,6 +409,19 @@
             </div>
             <div class="text">
 
+            </div>
+          </div>
+        </div>
+        <div class="colRight">
+          <div class="address">
+            <div class="heading">
+              KNOWMORE
+            </div>
+            <div class="text">
+              <P>Our Services</P>
+              <P>Image Gallery</P>
+              <p>Privacy Policy</p>
+              <p>T&C</p>
             </div>
           </div>
         </div>
@@ -511,30 +520,47 @@
       });
 
       var swiper = new Swiper(".mySwiper", {
-        autoplay: true,
         loop: true,
         spaceBetween: 1,
         direction: "vertical",
         centeredSlides: true,
         slidesPerView: 4.5,
-        autoplay: true,
+        // autoplay: true,
         freeMode: true,
-        watchSlidesProgress: true,
+        // watchSlidesProgress: true,
         breakpoints: {
-          600: {
-            slidesPerView: 4,
+          // 600: {
+          //   slidesPerView: 8,
+          // },
+          breakpoints: {
+            100: {
+              slidesPerView: 1.2,
+            },
+            640: {
+              slidesPerView: 1.8,
+            },
+            768: {
+              slidesPerView: 1.8,
+            },
+            900: {
+              slidesPerView: 1,
+            },
+            1024: {
+              slidesPerView: 5,
+            },
           },
         },
       });
       var swiper2 = new Swiper(".mySwiper2", {
         effect: "fade",
-        autoplay: true,
+        // autoplay: true,
         centeredSlides: true,
         loop: true,
         spaceBetween: 1,
         thumbs: {
           swiper: swiper,
         },
+
       });
     </script>
 
