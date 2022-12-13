@@ -583,6 +583,11 @@ a {
     width: 1475px;
   }
 }
+@media only screen and (max-width: 600px) {
+  .contact .bottom .left img {
+    display: none;
+  }
+}
 .contact .bottom .right .services {
   display: flex;
   justify-content: space-between;

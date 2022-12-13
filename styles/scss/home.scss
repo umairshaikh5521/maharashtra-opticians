@@ -375,6 +375,9 @@
           top: -240px;
           width: 1475px;
         }
+        @media only screen and (max-width:600px){
+          display: none;
+        }
       }
     }
     .right{
