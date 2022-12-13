@@ -5,43 +5,54 @@ $mobileResolution: 767px;
 $ipadProResolution: 1024px;
 @font-face {
   font-family: "Mukta";
-  src: url("/assets/fonts/Mukta-Regular.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 300;
-}
-
-@font-face {
-  font-family: "Mukta";
-  src: url("/assets/fonts/mukta-medium.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 400;
-}
-
-@font-face {
-  font-family: "Mukta";
-  src: url("/assets/fonts/mukta-semibold.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Mukta";
   src: url("/assets/fonts/mukta-bold.woff2")
     format("woff2");
   font-display: swap;
   font-weight: 700;
 }
 
+@font-face {
+  font-family: "Mukta";
+  src: url("/assets/fonts/mukta-semibold.woff2")
+  format("woff2");
+  font-display: swap;
+  font-weight: 500;
+}
 
 @font-face {
-  font-family: "Palanquin Dark";
-  src: url("/assets/fonts/palanquindark-regular.woff2")
+  font-family: "Mukta";
+  src: url("/assets/fonts/mukta-medium.woff2")
+  format("woff2");
+  font-display: swap;
+  font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "Mukta";
+  src: url("/assets/fonts/Mukta-Regular.woff2")
     format("woff2");
   font-display: swap;
   font-weight: 300;
+}
+
+
+
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/PalanquinDark-Bold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Palanquin Dark";
+  src: url("/assets/fonts/palanquindark-semibold.woff2")
+    format("woff2");
+  font-display: swap;
+  font-weight: 500;
 }
 
 @font-face {
@@ -54,19 +65,10 @@ $ipadProResolution: 1024px;
 
 @font-face {
   font-family: "Palanquin Dark";
-  src: url("/assets/fonts/palanquindark-semibold.woff2")
+  src: url("/assets/fonts/palanquindark-regular.woff2")
     format("woff2");
   font-display: swap;
-  font-weight: 500;
-}
-
-
-@font-face {
-  font-family: "Palanquin Dark";
-  src: url("/assets/fonts/PalanquinDark-Bold.woff2")
-    format("woff2");
-  font-display: swap;
-  font-weight: 700;
+  font-weight: 300;
 }
 .btn-primary {
   border-radius: 100px;

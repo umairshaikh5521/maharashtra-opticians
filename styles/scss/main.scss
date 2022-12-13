@@ -95,6 +95,9 @@ input, select{
   padding: 50px 0px;
   position: relative;
   background-color: #1A1A1A;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   .footer-elem {
     height: 100%;
     position: absolute;
@@ -202,6 +205,13 @@ input, select{
           margin-top: 15px;
           p{
             margin-bottom: 5px;
+          }
+          a{
+            font-size: 16px;
+            font-family: "Mukta";
+            font-weight: 300;
+            margin-top: 15px;
+            color: #fff;
           }
         }
       }
@@ -341,6 +351,36 @@ input, select{
       .text {
         font-size: 12px;
       }
+    }
+  }
+  .copyright{
+    background-color: #E5717D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 50px;
+    .rights{
+      color: #fff;
+      font-family: "Mukta";
+      font-size: 16px;
+      position: relative;
+      &::after{
+        content: '';
+        position: absolute;
+        height: 20px;
+        width: 1px;
+        left: 110%;
+        background: #fff;
+      }
+    }
+    .company-name{
+      color: #fff;
+      font-family: "Mukta";
+      font-size: 16px;
+      font-weight: 500;
     }
   }
 }

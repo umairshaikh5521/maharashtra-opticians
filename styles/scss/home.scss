@@ -14,6 +14,9 @@
   background-position: top;
   border-bottom-left-radius: 60px; 
   border-bottom-right-radius: 60px; 
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -70,6 +73,9 @@
   margin-top: 120px;
   display: flex;
   justify-content: space-between;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:900px){
     flex-direction: column;
   }
@@ -138,6 +144,9 @@
   border-bottom-left-radius: 60px; 
   border-bottom-right-radius: 60px; 
   padding-bottom: 1px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -194,6 +203,9 @@
   padding-bottom: 50px;
   border-bottom-left-radius: 60px; 
   border-bottom-right-radius: 60px; 
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -286,7 +298,11 @@
   height: 928px;
   border-bottom-left-radius: 60px; 
   border-bottom-right-radius: 60px; 
-  margin-top: -50px;
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -50px;
+    overflow: hidden;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -302,6 +318,9 @@
       font-family: "Palanquin Dark";
       color: #fff;
       font-weight: 700;
+      span{
+        font-weight: 300;
+      }
     }
     p{
       font-size: 16px;
@@ -324,6 +343,9 @@
         width: 1285px;
         @media only screen and (max-width:1100px){
           left: -90%;
+        }
+        @media only screen and (max-width:4000px){
+          left: -15%;
         }
         @media only screen and (max-width:1920px){
           left:-10%;
@@ -449,6 +471,9 @@
   background-color: #fff;
   margin-top: 48px;
   padding-bottom: 100px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -631,6 +656,9 @@
   border-bottom-right-radius: 60px;
   z-index: 2;
   position: relative;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:$mobileResolution) {
     border-bottom-left-radius: 30px; 
     border-bottom-right-radius: 30px; 
@@ -639,88 +667,123 @@
     width: 100%;
     padding-top: 100px;
     padding-bottom: 56px;
+    position: relative;
     @media only screen and (max-width : 1000px){
-      padding-bottom: 240px;
+      // padding-bottom: 240px;
     }
     @media only screen and (max-width : 600px){
-      padding-bottom: 140px;
+      padding-bottom: 0;
     }
-    .mySwiper{
-      height: 600px;
-      position: absolute;
-      top: 50%;
-      right: 0;
-      transform: translate(-50%, -50%);
-      @media only screen and (max-width:1800px) {
-        top: 50%;
+
+    .fProductsRow{
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      // flex-direction: column;
+
+      @media only screen and (max-width: 1024px){
+        flex-direction: column;
       }
-      @media only screen and (max-width : 1300px){
-        height: 55vh;
-        right: 0;
-        top:55%;
-        width: 11%;
-      }
-      // @media only screen and (max-width : 1200px){
-      //   width: 14%;
-      // }
-      @media only screen and (max-width : 1024px){
-        height: 55vh;
-        right: 0;
-        top:55%;
-        width: 11%;
-      }
-      @media only screen and (max-width : 1000px){
-        transform: rotate(90deg);
-        top: 55%;
-        height: 50vh;
-        left: -60%;
-        height: 100%;
-        margin-left:auto;
-        margin-right:auto;
-        width: 14%;
-        height: 100vh;
-    left: 34%;
-    margin: 0;
-      }
-      @media only screen and (max-width : 900px){
-               left: 43%;
-    top: 55%;
-    height: 64%;
-      }
-      @media only screen and (max-width : 760px){
-        height: 56%;
-      }
-      @media only screen and (max-width : 600px){
-        height: 56%;
-        top: 65%;
-        margin: 0;
-        right: 0;
-        left: 230px;
-      }
-      .swiper-slide{
-        height: auto !important;
-        margin-bottom: 30px !important;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        img{
-          @media only screen and (max-width : 1300px){
-            width: 120px;
-          }
-          @media only screen and (max-width : 1024px){
-            width: 100px;
-          }
-          @media only screen and (max-width : 1000px){
-            transform: rotate(-90deg);
-            width: 100%;
-          }
-          // @media only screen and  (max-width:900px) {
-          //   height:100px ;
-          //   width: 100px;
-          // }
+
+      .productsSlider{
+        width: 80%;
+        @media only screen and (max-width:$mobileResolution) {
+          width: 100%;
         }
       }
+    }
+
+    .thumbsSlider{
       
+      // height: 600px;
+
+      max-height: 100%;
+      max-width: 100%;
+      overflow: hidden;
+      .thumbsSwiper, .thumbsSwiperMob{
+        .swiper-wrapper{
+          .swiper-slide-active{
+            opacity: 1 !important;
+          }
+          .swiper-slide{
+            opacity: 0.6;
+            
+            &.swiper-slide-thumb-active{
+              opacity: 1 !important;
+            }
+          }
+        }
+        @media only screen and (max-width:5000px) {
+          height: 70vh;
+          max-height: 742px;
+        }
+        @media only screen and (max-width:1500px){
+          height: 60vh;
+        }
+        @media only screen and (max-width:1300px){
+          height: 50vh;
+        }
+        .swiper-slide{
+          // height: auto !important;
+          // margin-bottom: 30px !important;
+          // display: flex;
+          // width: 100%;
+          // height: 100%;
+          img{
+            // height: 144px;
+            // width: 158px;
+            // width: 100%;
+            height: 100%;
+            @media only screen and (max-width : 1300px){
+              // width: 120px;
+              // height: 100px;
+            }
+            // @media only screen and (max-width : 1024px){
+            //   width: 100px;
+            // }
+            // @media only screen and (max-width : 1000px){
+            //   transform: rotate(-90deg);
+            //   height: 144px;
+            // width: 158px;
+            // }
+            @media only screen and (max-width : 700px){
+              width: 100%;    
+              height: 100%;
+            }
+            @media only screen and (max-width : 450px){
+              width: 90%;    
+              height: 70%;
+            }
+            @media only screen and (max-width : 350px){
+              width: 90%;    
+              height: 50%;
+            }
+            // @media only screen and  (max-width:900px) {
+            //   height:100px ;
+            //   width: 100px;
+            // }
+          }
+        }
+        
+      }  
+
+      .thumbsSwiperMob{
+        display: none !important;
+      }
+
+      @media only screen and (max-width: 1024px){
+        
+
+        .thumbsSwiperMob{
+          display: block !important;
+          height: 140px;
+          margin-top: 50px;
+        }
+
+        .thumbsSwiper{
+          display: none !important;
+        }
+      }
     }
     .section-title{
       font-size: 36px;
@@ -807,12 +870,20 @@
   display: flex;
   height: 686px;
   margin-top: -50px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
   @media only screen and (max-width:1000px) {
     flex-direction: column;
   }
   .left-wrap{
     width: 40%;
     display: flex;
+    background-color: #000;
+    background-image: url("/assets/images/contact-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
     @media only screen and (max-width:1000px){
       width: 100%;
     }
@@ -821,7 +892,7 @@
       align-items: center;
       flex-direction: column;
       justify-content: center;
-      background: #B54F59;
+      // background: #B54F59;
       height: 100%;
       width: 100%;
       padding-left: 31px;
